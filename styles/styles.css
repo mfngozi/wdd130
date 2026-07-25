@@ -17,16 +17,24 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
 }
 
 main img {
@@ -65,6 +73,7 @@ aside h2 {
     position: absolute;
     top: 0px;
     left: 20px;
+    padding: 0.25rem 0.5rem;
 }
 
 aside img {
@@ -85,4 +94,18 @@ footer {
     padding: 1rem;
     background-color: lightblue;
     color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
